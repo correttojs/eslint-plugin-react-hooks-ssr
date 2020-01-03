@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/correttojs/eslint-plugin-react-ssr.git"
+    "url": "git+https://github.com/correttojs/eslint-plugin-react-hooks-ssr.git"
   },
   "author": "Fabio Benedetti",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/correttojs/eslint-plugin-react-ssr/issues"
+    "url": "https://github.com/correttojs/eslint-plugin-react-hooks-ssr/issues"
   },
-  "homepage": "https://github.com/correttojs/eslint-plugin-react-ssr#readme",
+  "homepage": "https://github.com/correttojs/eslint-plugin-react-hooks-ssr#readme",
   "peerDependencies": {
     "eslint": ">=4.x"
   }

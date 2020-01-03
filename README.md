@@ -1,4 +1,4 @@
-# eslint-plugin-react-ssr
+# eslint-plugin-react-hooks-ssr
 
 This plugin helps you to forbid DOM globals within the react server side rendering. 
 - it doesn't support yet React classes
@@ -14,22 +14,22 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-react-ssr`:
+Next, install `eslint-plugin-react-hooks-ssr`:
 
 ```
-$ npm install eslint-plugin-react-ssr --save-dev
+$ npm install eslint-plugin-react-hooks-ssr --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-react-ssr` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-react-hooks-ssr` globally.
 
 ## Usage
 
-Add `react-ssr` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `react-hooks-ssr` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "react-ssr"
+        "react-hooks-ssr"
     ]
 }
 ```
