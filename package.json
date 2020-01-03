@@ -1,0 +1,25 @@
+{
+  "name": "eslint-plugin-react-ssr",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "keywords": [
+    "eslint",
+    "react",
+    "ssr",
+    "server side rendering"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/correttojs/eslint-plugin-react-ssr.git"
+  },
+  "author": "Fabio Benedetti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/correttojs/eslint-plugin-react-ssr/issues"
+  },
+  "homepage": "https://github.com/correttojs/eslint-plugin-react-ssr#readme",
+  "peerDependencies": {
+    "eslint": ">=4.x"
+  }
+}
