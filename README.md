@@ -2,7 +2,7 @@
 
 This plugin helps you to forbid DOM globals within the react server side rendering. 
 - it doesn't support yet React classes
-- it supports custom hooks
+- it supports react hooks and custom hooks
 - it requires some naming conventions to identify other functions where globals may be allowed
 
 
@@ -24,13 +24,23 @@ $ npm install eslint-plugin-react-hooks-ssr --save-dev
 
 ## Usage
 
-Add `react-hooks-ssr` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `react-hooks-ssr` to the plugins section of your `.eslintrc.js` configuration file. You can omit the `eslint-plugin-` prefix:
 
-```json
+```javascript
 {
     "plugins": [
         "react-hooks-ssr"
     ]
+}
+```
+
+Optionally configure the regexp to whitelist globals within certain function declarations (by default the `async` prefix).
+
+```javascript
+{
+    "rules": {
+        "react-hooks-ssr/react-hooks-global-ssr": ["error", { "allowFuncRegExp": /test/ }]
+    }
 }
 ```
 
@@ -59,7 +69,7 @@ function Component() {
 ```
 
 
-- a global within a function prefixed by `async` (`asyncMyFunc`) is allowed
+- a global within a function prefixed by `async` (`asyncMyFunc`) is allowed. This pattern can be replaced by the `allowFuncRegExp` option
 
 ```javascript
 function asyncMyFunction() {
@@ -67,7 +77,7 @@ function asyncMyFunction() {
 }
 ```
 
-- a global within a `useState` and `useReducer` callback is forbidden
+- a global within a `useState`, `useReducer` and `useMemo` callback is forbidden
 
 ```javascript
 function Component() {
