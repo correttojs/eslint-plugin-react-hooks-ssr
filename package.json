@@ -21,5 +21,12 @@
   "homepage": "https://github.com/correttojs/eslint-plugin-react-hooks-ssr#readme",
   "peerDependencies": {
     "eslint": ">=4.x"
+  },
+  "scripts": {
+    "test": "mocha tests/**/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "mocha": "^7.0.0"
   }
 }
