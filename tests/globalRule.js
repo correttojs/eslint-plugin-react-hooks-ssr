@@ -35,6 +35,12 @@ ruleTester.run(
             var x = window.innerHeight;
         }`,
         options: [{ allowFuncRegExp: /testFunc/ }]
+      },
+
+      {
+        code: `function testFunc(){ 
+            var x = typeof window;
+        }`
       }
     ],
 
